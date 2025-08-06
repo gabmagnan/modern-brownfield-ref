@@ -23,6 +23,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+/* import { LinearGradient } from 'expo-linear-gradient'; */
+import DeviceInfo from 'react-native-device-info'
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -96,8 +98,14 @@ function App(): React.JSX.Element {
           }}>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+            CECI EST UN TEST.
+            <Text>{DeviceInfo.getVersion()}</Text>
           </Section>
+          {/* <LinearGradient
+            colors={['#4c669f', '#3b5998', '#192f6a']}
+            style={styles.button}>
+          <Text style={styles.text}>Sign in with Facebook</Text>
+        </LinearGradient> */}
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
@@ -135,6 +143,16 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  button: {
+    padding: 15,
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+  text: {
+    backgroundColor: 'transparent',
+    fontSize: 15,
+    color: '#fff',
   },
 });
 

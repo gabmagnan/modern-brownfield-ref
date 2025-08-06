@@ -11,12 +11,14 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.soloader.OpenSourceMergedSoMapping
 import com.facebook.soloader.SoLoader
+import com.callstack.react.BuildConfig
 
 class RNBridgeManager {
     companion object {
         val shared: RNBridgeManager by lazy { RNBridgeManager() }
         private var reactNativeHost: ReactNativeHost? = null
         private var reactHost: ReactHost? = null
+        
     }
 
     fun getReactNativeHost(): ReactNativeHost? {

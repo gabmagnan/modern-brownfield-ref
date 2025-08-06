@@ -14,8 +14,28 @@
     "brownfield:android": "./scripts/build-aar.sh"
   },
   "dependencies": {
+    "@datadog/mobile-react-native": "^2.11.0",
+    "expo": "51.0.22",
+    "expo-asset": "10.0.10",
+    "expo-av": "14.0.6",
+    "expo-crypto": "13.0.2",
+    "expo-datadog": "51.0.2",
+    "expo-file-system": "17.0.1",
+    "expo-haptics": "13.0.1",
+    "expo-image-picker": "15.0.7",
+    "expo-keep-awake": "13.0.2",
+    "expo-linear-gradient": "13.0.2",
+    "expo-local-authentication": "14.0.1",
+    "expo-location": "17.0.1",
+    "expo-modules-core": "^2.5.0",
+    "expo-secure-store": "13.0.2",
+    "expo-sensors": "13.0.9",
+    "expo-splash-screen": "0.27.5",
+    "expo-store-review": "7.0.2",
+    "expo-system-ui": "3.0.7",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.2",
+    "react-native-device-info": "9.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
