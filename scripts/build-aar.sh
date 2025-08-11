@@ -15,3 +15,7 @@ echo -e "✅ AARs built successfully: \n android/react-brownfield/build/outputs/
  ./gradlew publishToMavenLocal
 
 echo "✅ AARs published to mavenLocal: com.callstack.react:react-brownfield"
+
+./gradlew -p ../test-apps/android build --refresh-dependencies
+
+echo "✅ Test app built successfully"

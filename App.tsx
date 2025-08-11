@@ -23,7 +23,6 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-/* import { LinearGradient } from 'expo-linear-gradient'; */
 import DeviceInfo from 'react-native-device-info'
 
 type SectionProps = PropsWithChildren<{
@@ -101,11 +100,6 @@ function App(): React.JSX.Element {
             CECI EST UN TEST.
             <Text>{DeviceInfo.getVersion()}</Text>
           </Section>
-          {/* <LinearGradient
-            colors={['#4c669f', '#3b5998', '#192f6a']}
-            style={styles.button}>
-          <Text style={styles.text}>Sign in with Facebook</Text>
-        </LinearGradient> */}
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
